@@ -17,6 +17,18 @@ public class BankAccount{
         accountsCreated++;
     }
 
+    // Create a method that will allow a user to deposit money into either the checking or
+    // saving, be sure to add to total amount stored.
+    public void depositBalance(double amountToDeposit, String accountType){
+        if(accountType.equals("savings")){
+            savingsBalance+=amountToDeposit;
+            totalMoneyStored+=amountToDeposit;
+        } else if(accountType.equals("checking")){
+            checkingBalance+=amountToDeposit;
+            totalMoneyStored+=amountToDeposit;
+        }
+    }
+
     // Create a getter method for the user's checking and saving account balance.
     public double getCheckingBalance(){
         return checkingBalance;

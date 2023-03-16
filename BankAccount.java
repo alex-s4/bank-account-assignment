@@ -29,6 +29,18 @@ public class BankAccount{
         }
     }
 
+    // Create a method to withdraw money from one balance. Do not allow them to 
+    // withdraw money if there are insufficient funds.
+    public void withdrawBalance(double amountToWithdraw, String accountType){
+        if (checkingBalance<amountToWithdraw || savingsBalance<amountToWithdraw){
+            System.out.println("You have INSUFFICIENT BALANCE!");
+        } else if (checkingBalance>amountToWithdraw && accountType.equals("checking")){
+            checkingBalance-=amountToWithdraw;
+        } else if (savingsBalance>amountToWithdraw && accountType.equals("savings")){
+            savingsBalance-=amountToWithdraw;
+        }
+    }
+
     // Create a getter method for the user's checking and saving account balance.
     public double getCheckingBalance(){
         return checkingBalance;

@@ -1,4 +1,4 @@
-package bankAccountAssignment;
+// package bankAccountAssignment;
 
 /**
  * TestBankAccount
@@ -19,11 +19,11 @@ public class TestBankAccount {
         account1.withdrawBalance(200, "savings");
         account1.withdrawBalance(14200, "checking");
 
-        // account1.displayCurrentBalance();
-        // account2.displayCurrentBalance();
-        // account3.displayCurrentBalance();
+        account1.displayCurrentBalance();
+        account2.displayCurrentBalance();
+        account3.displayCurrentBalance();
 
-        // System.out.println(account1.accountNumber);
+        System.out.println(account1.accountNumber);
         // System.out.println(account2.accountNumber);
         // System.out.println(account3.accountNumber);
 

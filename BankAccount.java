@@ -1,7 +1,14 @@
 package bankAccountAssignment;
 
+import java.util.Random;
+
 public class BankAccount{
     
+    // NINJA BONUS: Add the the following class attribute: account number. The type is up to you, can be a String or a Long
+    // or another type.
+    String accountNumber = "";
+
+
     // The class should have the following attributes: (double) checking balance, (double) savings balance.
     private double checkingBalance = 0;
     private double savingsBalance = 0;
@@ -15,6 +22,16 @@ public class BankAccount{
     // In the constructor, be sure to increment the account count.
     public BankAccount(){
         accountsCreated++;
+        generateAccountNumber();
+    }
+
+    //  NINJA BONUS: Create a private method that returns a random ten digit account number.
+    private String generateAccountNumber(){
+        Random random = new Random();
+        for(int i=0; i<10; i++){
+            accountNumber+=random.nextInt(9);
+        }
+        return accountNumber;
     }
 
     // Create a method that will allow a user to deposit money into either the checking or

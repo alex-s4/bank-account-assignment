@@ -23,7 +23,9 @@ public class TestBankAccount {
         // account2.displayCurrentBalance();
         // account3.displayCurrentBalance();
 
-        System.out.println(BankAccount.totalMoneyStored);
+        // System.out.println(account1.accountNumber);
+        // System.out.println(account2.accountNumber);
+        // System.out.println(account3.accountNumber);
 
 
     }

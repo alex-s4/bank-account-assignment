@@ -19,11 +19,11 @@ public class TestBankAccount {
         account1.withdrawBalance(200, "savings");
         account1.withdrawBalance(14200, "checking");
 
-        account1.displayCurrentBalance();
+        // account1.displayCurrentBalance();
         // account2.displayCurrentBalance();
         // account3.displayCurrentBalance();
 
-        // System.out.println(BankAccount.accountsCreated);
+        System.out.println(BankAccount.totalMoneyStored);
 
 
     }

@@ -41,6 +41,11 @@ public class BankAccount{
         }
     }
 
+    // Create a method to see the total money from the checking and saving.
+    public void displayCurrentBalance(){
+        System.out.println(String.format("Your Current Balance:\nSavings: %.2f\nChecking: %.2f", savingsBalance, checkingBalance));
+    }
+
     // Create a getter method for the user's checking and saving account balance.
     public double getCheckingBalance(){
         return checkingBalance;
